@@ -19,15 +19,14 @@
             <form>
                 
                 <h3>Search Project By</h3>
-                <label>
-                    <input type="text" id="searchTerm" name="searchTerm" placeholder="Project Name, Authors, Abstract, Tags"><br><br>
-                </label>
-                <label for="searchBy">Search By:<br><br>
-                    <select id="searchBy" name="searchBy">
-                   <option value="name">Name</option>
-                   <option value="abstract">Abstract</option>
-                   <option value="authors">Authors</option>
-                   <option value="tags">Tags</option><br>
+                    <form name="searchForm">
+                            <input type="text" id="searchTerm" name="searchTerm" placeholder="Project Name, Authors, Abstract, Tags"><br><br>
+                            <label for="searchType">Search By:<br><br>
+                            <select id="searchType" name="searchType">
+                                <option value="name">Name</option>
+                                <option value="abstract">Abstract</option>
+                                <option value="authors">Authors</option>
+                                <option value="tags">Tags</option><br>
                                  
                 </select><br><br>
                 <input type="submit" value="Search">
@@ -37,8 +36,10 @@
 
 
         <div>
+            <header>
             <h2>Search Result</h2>
             <h3>Project 1</h3>
+            </header>
             <ul>
                 <li>Name: Project 1</li>
                 <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <br>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</li>

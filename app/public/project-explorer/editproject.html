@@ -15,8 +15,9 @@
 <main>
 
     <div>
-        
-        <h3>Project 1</h3>
+        <header>
+        <title>Project 1</title>
+        </header>
         <ul>
             <li>Created By: Jane Doe</li>
             <li>Date Created: 00/00/0000</li>
@@ -25,13 +26,12 @@
     </div>
 
     <div>
-        <form>
-            <h2>Edit Project</h2>
-
-            <label for ="projectname">Project Name:<br>
-            <input type ="text" id ="projectname" name ="projectname"><br><br>
+        <form name = "editProject">
+            
+            <label for ="name">Project Name:<br>
+            <input type ="text" id ="name" name ="name"><br><br>
         
-            <label for ="projectabstract">Project Abstract:<br>
+            <label for ="abstract">Project Abstract:<br>
              <textarea rows="3" cols="20"></textarea><br><br>
             
             <label for ="authors">Authors:<br>
@@ -40,8 +40,8 @@
             <label for ="tags">Tag(s):<br>
             <input type ="text" id = "tags" name = "tags"><br><br>
         
-            <label for ="uploadfile">Upload File<br>
-            <input type ="file" id = "uploadfile" name = "uploadfile">
+            <label for ="file">Upload File<br>
+            <input type ="file" id = "file" name = "file">
 
            </select><br><br>
           <input type="submit">
@@ -50,6 +50,5 @@
     </div>
 
     
-
 </main>
 </html>
